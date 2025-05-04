@@ -6,13 +6,13 @@ sia = SentimentIntensityAnalyzer()
 
 responses = {
     "positive" : [
-        "Positive"
+        "Positive Message"
     ],
     "negative" : [
-        "Negative"
+        "Negative Message"
     ],
     "neutral" : [
-        "Neutral"
+        "Neutral Message"
     ]
 }
 
@@ -33,7 +33,7 @@ def chatbot_reply(message):
 
 print("Message Detector is running")
 while True:
-    user_input = input(":")  
+    user_input = input("Enter Your Message:")  
     if user_input.lower() == "exit":
         print("Bye Bye")
         break
